@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pokedex Android App - Jacob Laity's Scholarship</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<script src="js/mobile.js" type="text/javascript"></script>
+	<link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div>
+				<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+				<ul id="navigation">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="projects.html">Projects</a>
+					</li>
+					<li>
+						<a href="blog.html">Blog</a>
+					</li>
+					<li>
+						<a href="contact.html">Current</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="body">
+			<div class="header">
+				<div>
+					<h1>Pokedex Android App</h1>
+					<h2><a href="https://www.youtube.com/watch?v=0dlCcXg-5do">Video of App</a></h2>
+					<img src="images/pokedex.png" style="width:380px" alt="">
+					<p>My younger brother and I are big Pokemon fans. As he is young, he often has many questions about what pokemon look like or how to spell there name. Eventually, asnwering all these questions all the times gets a bit annoying. <br>
+					Then I had an idea, and idea that could "kill 2 birds with 1 stone." I could design my first Android app AND solve this problem.</p> 
+					<p>So I developed a Pokedex app. For any readers who are not Pokemon fans, it essentially shows all the Pokemon, a photo of them and their name.</p>
+					<p>My first design hurdle was a database. I am a lazy person, and I didn't want to have to make a database for roughly 800+ Pokemon! <br>
+						Eventually, I stumbled across <a href="https://pokeapi.co/">PokeAPI</a>, which is a REST API containing extensive information about all Pokemon. <br>
+						The one small issue was that the API did not allow you to make a request for a large number of pokemon at once, otherwise their service would be overloaded. This meant that as you are scrolling through the app, it is continously loading the further you scroll. This sometimes means that you have to wait a second for it to catch up, but it is still perfectly usable. </p>
+					<p>The app used Retrofit to consume the API and Glide to download the images. I developed the app in Android Studio and the video was filmed on a OnePlus 3 smartphone.<br>
+						It was a worthwhile effort. I have learnt a lot about Anroid app development and consuming an API and it made my brother stop asking me questions, for now!</p> 
+
+					
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="connect">
+				<div>
+					<h1>FOLLOW  ME ON</h1>
+					<div>
+						<!--<a href="http://freewebsitetemplates.com/go/facebook/" class="facebook">facebook</a>-->
+						<a href="https://twitter.com/doodle911" class="twitter">twitter</a>
+						<!--<a href="http://freewebsitetemplates.com/go/googleplus/" class="googleplus">googleplus</a>
+						<a href="http://pinterest.com/fwtemplates/" class="pinterest">pinterest</a>-->
+					</div>
+				</div>
+			</div>
+			<div class="footnote">
+				<div>
+					<p>Thanks for visiting the site!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

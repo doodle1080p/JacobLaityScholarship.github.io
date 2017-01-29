@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>RPI Defence Turret - Jacob Laity's Scholarship</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<script src="js/mobile.js" type="text/javascript"></script>
+	<link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div>
+				<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+				<ul id="navigation">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="projects.html">Projects</a>
+					</li>
+					<li>
+						<a href="blog.html">Blog</a>
+					</li>
+					<li>
+						<a href="contact.html">Current</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="body">
+			<div class="header">
+				<div>
+					<h1>RPI Defence Turret </h1>
+					<h2>2016 "Fun and Games" #HackJSY Hackathon</h2>
+					<h2><a href="https://www.youtube.com/watch?v=cCRjMpW0HX0">Presentation Video</a></h2>
+					<h2><a href="https://www.youtube.com/watch?v=j4r5vTBBQbU">Watch it in action!</a></h2>
+					<p>A Raspberry Pi powered defense turret that detects an intruder, shoots them with a foam dart and then tweets a photo of it all. Programmed in Pyhton. Turret was a Dreamcheeky Thunder.</p>
+					<img src="images/turret.jpg" alt="turret" style="width:720px">
+					<h2>Controlling the Turret</h2>
+					<p>The first logical step, and the funnest, was to figure out how to control turret, a Dreamcheeky Thunder. <br>
+						After some googling, I found multiple scripts to do it. Unfortunately, none of them worked. <br>
+						Eventually I found the correct low-level codes that I had to transmit to the turret, I then inserted these into one of the simpler non-working scripts and Ta Daa! It works. <br>
+						Here are the codes<br><br>
+						Up - self.dev.ctrl_transfer(0x21,0x09,0,0,[0x02,0x02,0x00,0x00,0x00,0x00,0x00,0x00]) <br>
+						Down - self.dev.ctrl_transfer(0x21,0x09,0,0,[0x02,0x01,0x00,0x00,0x00,0x00,0x00,0x00]) <br>
+						Left - self.dev.ctrl_transfer(0x21,0x09,0,0,[0x02,0x04,0x00,0x00,0x00,0x00,0x00,0x00]) <br>
+						Right - self.dev.ctrl_transfer(0x21,0x09,0,0,[0x02,0x08,0x00,0x00,0x00,0x00,0x00,0x00]) <br>
+						Stop - self.dev.ctrl_transfer(0x21,0x09,0,0,[0x02,0x20,0x00,0x00,0x00,0x00,0x00,0x00]) <br>
+						Fire - self.dev.ctrl_transfer(0x21,0x09,0,0,[0x02,0x10,0x00,0x00,0x00,0x00,0x00,0x00]) <br><br>
+						Here is a video of me controlling the turret</p>
+						<h2><a href="https://www.youtube.com/watch?v=pSVUSQLYOA0">Controlling the Turret</a></h2>
+					<h2>Detecting and taking a photo</h2>
+					<p>Next was to make the Pi detect the intruder and take a photo. I decided to start this off in a seperate script to the turret one. Luckily, there was an <a href="https://www.raspberrypi.org/learning/parent-detector/">official tutorial on how to do just that</a>! <br>
+					 Now, this tutorial recorded video, but it was not hard to make it a photo.</p>
+					 <h2>Motion Sensor</h2>
+					 <img src="images/sensor.jpg" alt="turret" style="width:520px">
+					 <h2>RPI Camera Board</h2>
+					 <img src="images/camera.jpg" alt="turret" style="width:520px">
+					<h2>Tweeting the photo</h2>	
+					<p>For this task, I used <a href="https://www.raspberrypi.org/learning/parent-detector/">Tweepy</a>. This is a library for Python that allowed me to use twitter. It required my Twitter account to be registered as a developer which required a SIM number. It wouldn't accept Jersey SIMs, but luckily my dad had a spare UK GiffGaff SIM Card to use. <br>
+					I also made a timestamp in the tweet and an intruder alert message.</p>
+					<h2>One of the tweets</h2>
+					 <img src="images/tweet.png" alt="turret" style="width:360px">
+					 <h2>Disaster!</h2>
+					 <p>It was after this that my dad dropped the Raspberry Pi and broke the camera board and Micro SD card with all the code and the PI's OS <br>
+					 	Luckily, the judges had seen each individual stage of the build and we had proof that it worked. So in the end, I still managed to come 2ND!
+					 <h2>Post-Hackathon</h2>
+					 <p>I ordered a new SD card and camera. I wrote a script that linked all the code together, tweeting, photo-ing and shooting.<br>
+					 I also put it into a proper case that kept the camera and sensor facing forward. <br>
+					 I also added a Google Spreadsheets database, which recorded every time an intruder entered the room.</p>
+					 <img src="images/spread.png" alt="turret" style="width:520px">
+					 <h2><a href="https://www.youtube.com/watch?v=j4r5vTBBQbU">Watch it in action!</a></h2>
+
+
+
+					
+
+
+
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="connect">
+				<div>
+					<h1>FOLLOW  ME ON</h1>
+					<div>
+						<!--<a href="http://freewebsitetemplates.com/go/facebook/" class="facebook">facebook</a>-->
+						<a href="https://twitter.com/doodle911" class="twitter">twitter</a>
+						<!--<a href="http://freewebsitetemplates.com/go/googleplus/" class="googleplus">googleplus</a>
+						<a href="http://pinterest.com/fwtemplates/" class="pinterest">pinterest</a>-->
+					</div>
+				</div>
+			</div>
+			<div class="footnote">
+				<div>
+					<p>Thanks for visiting the site!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

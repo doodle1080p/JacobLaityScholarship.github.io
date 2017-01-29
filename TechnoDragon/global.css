@@ -1,0 +1,88 @@
+#center {
+	text-align: center;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+}
+
+h2 {
+	color: white;
+	text-align: center;
+}
+
+h3 {
+	color: white;
+	text-align: center;
+	font-weight: bold;
+}
+p {
+	text-align: center;
+	color: white;
+	font-weight: bold;
+
+}
+
+#nav {
+	text-align: center;
+	
+	padding-top: 7.5px;
+	padding-bottom: 7.5px;
+}
+
+#slides {
+	text-align: center;
+
+}
+
+#logo {
+	text-align: center;
+	width: 120px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+#text {
+	text-align: center;
+
+	padding-bottom: 5px;
+}
+
+#myPhoto1 {
+	width: 120px;
+}
+
+#buttons {
+	text-align: center;
+	padding-top: 50px;
+	background-image:
+
+}
+
+#one {
+
+	text-align: center;
+
+}
+
+#two {
+	text-align: center;
+}
+
+#three {
+	margin-left: 250px;
+}
+
+#urine {
+	text-align: center;
+	font-weight: bold;
+}
+
+#bbc {
+	text-align: center;
+}
+
+#hi {
+	text-align: center;
+}

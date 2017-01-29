@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>uHack - Jacob Laity's Scholarship</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<script src="js/mobile.js" type="text/javascript"></script>
+	<link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div>
+				<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+				<ul id="navigation">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="projects.html">Projects</a>
+					</li>
+					<li>
+						<a href="blog.html">Blog</a>
+					</li>
+					<li>
+						<a href="contact.html">Current</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="body">
+			<div class="header">
+				<div>
+					<h1>Youth Hackathon 2016</h1>
+					<div class="article">
+						<img src="images/uhack.jpg" alt="">
+						<h1>Development Blog</h1>
+						<span>7 and 8 October 2016</span>
+						<p>In a nutshell our idea was an app for iOS that tells users the amoutn fo available parking spaces across the main urbanised area's carparks of the small island we live on.</p>
+						<p>We left school at 3:30 and went straight to the hackathon. We found a place to set up our stuff and the event started at 4:30PM on Friday.</p>
+						<p>5:30PM - Nice little UI set up, Minden Place JSON is parsing fine and linking to the UI. The app calculates the percent full of Minden Place which affects the status colour.</p>
+						<p>6:30PM - After a 20 minute break and chatting to other contestants we now have a nice custom designed app icon and another car park, Green Street, wokring.</p>
+						<p>10:00PM - Our iPhone app is pretty much complete, now onto Apple Watch!</p>
+						<p>10:30PM -  DISASTER STRIKES. I changed the name of our JSON parsing package which has confused all our code. Gunna try and start again.</p>
+						<p>11:00PM - No luck. Starting again has repeated the same error. We are updating to Swift 3 and ALamofire 4 to see if it helps...</p>
+						<p>12:00PM - Updating did not help and we don't know Swift 3 and Alamofire 4 syntax. NO! We are going to try and rollback to the older vesions!</p>
+						<p>00:30AM - Rollback failed. Our morale is fading and we are both tired, luckily we can talk to Australian friend for once as we are in the right timezone!</p>
+						<p>04:00AM -  We fixed Alamofire and our original issue!!! Unfortunately it is still on the new versions that we are not familiar with...</p>
+						<p>07:00AM -  We fixed some most of the syntax errors by reading Swift 3 and Alamofire 4 docs and StackOverlow. We are going to go and ask one of the mentors who knows a lot about code for some help with Syntax.</p>
+						<p>07:50AM - Hooray! The mentor knew swift 3 syntax and helped us fix it. Unfortunately we have a Thread 1 error now.</p>
+						<p>08:05AM - Some detective work in the debugger seems to conclude that the Thread error was to do with the data failing to be fetched. It seems to be a security issue. Luckily I have run into this issue before and have a good idea how to fix it, in swift 2. I am not sure if its the same in Swift 3 and xCode 8.</p>
+						<p>08:20AM - Yes! We have fixed the security issue. Now there is another Thread 1 error that we do not understand -  we are going to ask the mentor what he thinks it is.</p>
+						<p>08:45AM - The mentor concludes that we are not putting some of the JSON data into the data type - Swift is really picky and dumb. Unlike other languages it wants to be told what every type of date is e.g string, int or array. We were not doing this correctly though.</p>
+						<p>09:00AM - THE APP IS WORKING ONCE MORE. Unfortunately we dont not have nearly enough time to intergrate Apple Watch support.</p>
+						<p>09:00AM - UI "improvements" and we put the app on a phone. We are now making and practising the presentation.</p>
+						<p>11:30AM - Hackathon is over. Not how we expected to go but it could've gone a LOT worse.</p>
+						<p>12:30AM - We present our app. Other than a technical hiccup with displaying the phone on the project it went very well!</p>
+						<p>1:30 - We won second prize! We were not expecting this, especially after our late night disaster! Now time for sleep!!!</p>
+
+						<img src="images/steve.jpg" alt="">
+
+
+					</div>
+					<div class="sidebar">
+						<ul>
+							<li>
+								<h1>NEXT POST</h1>
+								<a href="future.html"><img src="images/twitter.jpg" style="width:275px;" alt=""></a>
+								<h2>Feedback</h2>
+								<span>Post-Hackathon</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="connect">
+				<div>
+					<h1>FOLLOW ME ON</h1>
+					<div>
+						<!--<a href="http://freewebsitetemplates.com/go/facebook/" class="facebook">facebook</a>-->
+						<a href="https://twitter.com/doodle911" class="twitter">twitter</a>
+						<!--<a href="http://freewebsitetemplates.com/go/googleplus/" class="googleplus">googleplus</a>
+						<a href="http://pinterest.com/fwtemplates/" class="pinterest">pinterest</a>-->
+					</div>
+				</div>
+			</div>
+			<div class="footnote">
+				<div>
+					<p>Thanks for visiting the site!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

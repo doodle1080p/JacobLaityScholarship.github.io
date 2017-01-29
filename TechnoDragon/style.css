@@ -1,0 +1,55 @@
+.center {
+	text-align: center;
+}
+
+#Drones {
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+
+#titledrones {
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+
+#slides {
+	text-align: center; 
+}
+
+#myPhoto1 {
+	padding-top: 5px;
+	width: 250px;
+	text-align: center;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+}
+
+#navy {
+	text-align: center;
+}
+
+
+h3 {
+	color: white;
+	text-align: center;
+}
+
+p {
+	color: white;
+	text-align: center;
+}
+
+#syfy {
+	text-align: center;
+	color: white;
+}
+
+#game{
+	text-align: center;
+	color: white;
+}

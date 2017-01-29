@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ParkR - Jacob Laity's Scholarship</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<script src="js/mobile.js" type="text/javascript"></script>
+	<link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div>
+				<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+				<ul id="navigation">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="projects.html">Projects</a>
+					</li>
+					<li>
+						<a href="blog.html">Blog</a>
+					</li>
+					<li>
+						<a href="contact.html">Current</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="body">
+			<div class="header">
+				<div>
+					<h1>Pig Latin Translator</h1>
+					<h2>Here is a YouTube video of the program in action!</h2>
+					<p>You can see me type in English (around the middle of the screen) and then translated Pig Latin is at the bottom!</p>
+
+					<iframe width="1000" height="500" src="https://www.youtube.com/embed/iS7AJyxJ1gg" frameborder="0" allowfullscreen></iframe>
+					<p>Screenshot of the code</p>
+					<img src="images/piggyCoder.png" alt="">
+					
+					<p>I am now going to walk you through the code step by step. I will start at func makePiggy, on the third line!</p>
+
+					<p>makePiggy is the main function for turing English into PigLatin. "let first" is the first letter of the word. "let rest" is the rest of the word. The last line of the function then says to add together "rest" + "first" + "ay". For example, if you had cheese then you would get "heesecay"</p>
+
+					<p>"Var words" is the English text that the user enters, the program then seperates them all by determing where the spaces are which is what the (seperatedBy: " ") is for!</p>
+
+					<p>Then the program then creates an empty string (pigs) that will eventually hold the translated text.</p>
+
+					<p>Then, basically, the program says that however many words there are in the English text is the amount of times that the makePiggy function will have to be called, it then assings the translate text (pig) to the display text (pigs) which then adds a space on the end off so there is some room for the next word.</p>
+
+					<p>This project took me about 3 hours - I made it at the weekly Jersey Coder's Club, where each session is 1.5 hours, and spent two weeks on it. This was one of my first expiriences with programming Swift and was very helpful in getting a grasp of the Syntax</p>
+
+					<p>So that I was able to feauture a video of the Pig Latin translator in this portfolio, I had to update the code from Swift 2, the language I originaly wrote it in, to Swift 3. Some minor errors in my explanation of the code might have occured due to me getting mixed up between Swift version!</p>
+					
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="connect">
+				<div>
+					<h1>FOLLOW  ME ON</h1>
+					<div>
+						<!--<a href="http://freewebsitetemplates.com/go/facebook/" class="facebook">facebook</a>-->
+						<a href="https://twitter.com/doodle911" class="twitter">twitter</a>
+						<!--<a href="http://freewebsitetemplates.com/go/googleplus/" class="googleplus">googleplus</a>
+						<a href="http://pinterest.com/fwtemplates/" class="pinterest">pinterest</a>-->
+					</div>
+				</div>
+			</div>
+			<div class="footnote">
+				<div>
+					<p>Thanks for visiting the site!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
